@@ -79,18 +79,26 @@ local Section = Tab:NewSection("Send Items")
 
 Section:NewButton("Night 1", "Places all items on Night 1", function()
     firetouchinterest(game.workspace.GroupBuildStructures.BlockTower.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+    wait(0.1)
+    firetouchinterest(game.workspace.GroupBuildStructures.BlockTower.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
 end)
 
 Section:NewButton("Night 2", "Places all items on Night 2", function()
     firetouchinterest(game.workspace.GroupBuildStructures.FoodCounter.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+    wait(0.1)
+    firetouchinterest(game.workspace.GroupBuildStructures.FoodCounter.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
 end)
 
 Section:NewButton("Night 3", "Places all items on Night 3", function()
     firetouchinterest(game.workspace.GroupBuildStructures.FuseBoard.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+    wait(0.1)
+    firetouchinterest(game.workspace.GroupBuildStructures.FuseBoard.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
 end)
 
 Section:NewButton("Night 4", "Places all items on Night 4", function()
     firetouchinterest(game.workspace.GroupBuildStructures.BatteryBox.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+    wait(0.1)
+    firetouchinterest(game.workspace.GroupBuildStructures.BatteryBox.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
 end)
 
 local Tab = Window:NewTab("Credits")
