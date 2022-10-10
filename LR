@@ -58,7 +58,7 @@ Submit.TextWrapped = true
 Submit.MouseButton1Down:Connect(function()
 if InsertKey.Text == "7$2_4=0+0" then
 	Main.Visible = false
-	loadstring(game:HttpGet(('https://pastebin.com/raw/Ft8MEFZ3')))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/The-Hexploiter/RainbowFriends/main/MainUI')))()
 end
 end)
 
@@ -108,7 +108,7 @@ CheckKey.TextWrapped = true
 CheckKey.MouseButton1Down:Connect(function()
 	if readfile("Hex_Keychecker.txt") == "7$14%10&6.9:49" then
 	    Main.Visible = false
-		loadstring(https://raw.githubusercontent.com/The-Hexploiter/RainbowFriends/main/MainUI')))()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/The-Hexploiter/RainbowFriends/main/MainUI')))()
 	end
 end)
 
