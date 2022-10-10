@@ -1,0 +1,109 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Rainbow Friends GUI", "Ocean")
+
+local Tab = Window:NewTab("LocalPlayer")
+
+local Section = Tab:NewSection("LocalPlayer")
+
+Section:NewTextBox("Speed", "Sets Your Speed (dont go too high)", function(txt)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (txt)
+end)
+
+Section:NewKeybind("Jump/InfJump", "Allows you to jump", Enum.KeyCode.E, function()
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+end)
+
+Section:NewSlider("HipHeight", "Allows you to walk on air", 8, 2, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = s
+end)
+
+Section:NewToggle("Purple God Mode", "Makes you Immune to Purple", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.HipHeight = 3
+    else
+        game.Players.LocalPlayer.Character.Humanoid.HipHeight = 2
+    end
+end)
+
+local Tab = Window:NewTab("Main")
+
+local Section = Tab:NewSection("Main")
+
+Section:NewButton("Item + Rainbow Friend ESP", "Shows all items and Rainbow Friends", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/QYEBpa7N"))()
+end)
+
+Section:NewButton("Click TP tool", "Gives you a tp tool", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/GuBiX19e"))()
+end)
+
+Section:NewButton("To Lobby", "Sends you to the Lobby", function()
+    player = game.Players.LocalPlayer
+TeleportService = game:GetService('TeleportService')
+placeID = (7991339063)
+
+TeleportService:Teleport(placeID, player)
+end)
+
+local Tab = Window:NewTab("Give Items")
+
+local Section = Tab:NewSection("Give Items (WIP)")
+
+local Section = Tab:NewSection("Blocks")
+
+Section:NewButton("Block", "Grabs all blocks", function()
+    loadstring(game:HttpGet"https://pastebin.com/raw/837Gf9b4")()
+end)
+
+local Section = Tab:NewSection("Food Pack (Coming Soon)")
+
+Section:NewButton("Food Pack (Coming Soon)", "Grabs all Food Packs", function()
+    print('Coming Soon')
+end)
+
+local Section = Tab:NewSection("Fuses")
+
+Section:NewButton("Fuse (Coming Soon)", "Grabs all Fuses", function()
+    print('Coming Soon')
+end)
+
+local Section = Tab:NewSection("Batteries")
+
+Section:NewButton("Battery (Might have to run multiple times", "Grabs all Batteries", function()
+    loadstring(game:HttpGet"https://pastebin.com/raw/GAgihYkV")()
+end)
+
+local Tab = Window:NewTab("Send Items")
+
+local Section = Tab:NewSection("Send Items")
+
+Section:NewButton("Night 1", "Places all items on Night 1", function()
+    firetouchinterest(game.workspace.GroupBuildStructures.BlockTower.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+end)
+
+Section:NewButton("Night 2", "Places all items on Night 2", function()
+    firetouchinterest(game.workspace.GroupBuildStructures.FoodCounter.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+end)
+
+Section:NewButton("Night 3", "Places all items on Night 3", function()
+    firetouchinterest(game.workspace.GroupBuildStructures.FuseBoard.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+end)
+
+Section:NewButton("Night 4", "Places all items on Night 4", function()
+    firetouchinterest(game.workspace.GroupBuildStructures.BatteryBox.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+end)
+
+local Tab = Window:NewTab("Credits")
+
+local Section = Tab:NewSection("Credits")
+
+local Section = Tab:NewSection("Credits")
+Section:NewLabel("Made by The_Hexploiter")
+
+Section:NewButton("Copy Discord Link", "Gives you the link for the discord", function()
+    setclipboard("https://discord.gg/zRpEEDDNpB")
+end)
+
+Section:NewButton("Copy Youtube Link", "Gives you the link for YouTube", function()
+    setclipboard("https://www.youtube.com/channel/UCxJL6CZOHA0JmnreowLNLIQ")
+end)
