@@ -1,0 +1,130 @@
+-- Instances:
+
+local Key_Gui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local GetKey = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Submit = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local InsertKey = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local Pleaseinsertkey = Instance.new("TextLabel")
+local CheckKey = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Header = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+Key_Gui.Name = "Key_Gui"
+Key_Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Key_Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = Key_Gui
+Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Main.Position = UDim2.new(0.241379306, 0, 0.410462767, 0)
+Main.Size = UDim2.new(0, 404, 0, 277)
+Main.Draggable = true
+
+GetKey.Name = "Get Key"
+GetKey.Parent = Main
+GetKey.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+GetKey.BorderColor3 = Color3.fromRGB(29, 29, 29)
+GetKey.Position = UDim2.new(0.100570679, 0, 0.623547435, 0)
+GetKey.Size = UDim2.new(0, 160, 0, 33)
+GetKey.Font = Enum.Font.Oswald
+GetKey.Text = "Get Key"
+GetKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetKey.TextScaled = true
+GetKey.TextSize = 14.000
+GetKey.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = GetKey
+
+Submit.Name = "Submit"
+Submit.Parent = Main
+Submit.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Submit.Position = UDim2.new(0.536214232, 0, 0.623547435, 0)
+Submit.Size = UDim2.new(0, 160, 0, 33)
+Submit.Font = Enum.Font.Oswald
+Submit.Text = "Submit"
+Submit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Submit.TextScaled = true
+Submit.TextSize = 14.000
+Submit.TextWrapped = true
+Submit.MouseButton1Down:Connect(function()
+if InsertKey.Text == "7$2_4=0+0" then
+	Main.Visible = false
+	loadstring(game:HttpGet(('https://pastebin.com/raw/Ft8MEFZ3')))()
+end
+end)
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = Submit
+
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = Main
+
+InsertKey.Name = "InsertKey"
+InsertKey.Parent = Main
+InsertKey.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+InsertKey.Position = UDim2.new(0.100570679, 0, 0.480144411, 0)
+InsertKey.Size = UDim2.new(0, 335, 0, 30)
+InsertKey.Font = Enum.Font.SourceSans
+InsertKey.Text = ""
+InsertKey.TextColor3 = Color3.fromRGB(97, 97, 97)
+InsertKey.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = InsertKey
+
+Pleaseinsertkey.Name = "Please insert key"
+Pleaseinsertkey.Parent = Main
+Pleaseinsertkey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pleaseinsertkey.BackgroundTransparency = 1.000
+Pleaseinsertkey.Position = UDim2.new(0.252475262, 0, 0.216606498, 0)
+Pleaseinsertkey.Size = UDim2.new(0, 200, 0, 36)
+Pleaseinsertkey.Font = Enum.Font.Oswald
+Pleaseinsertkey.Text = "Please insert key"
+Pleaseinsertkey.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pleaseinsertkey.TextScaled = true
+Pleaseinsertkey.TextSize = 14.000
+Pleaseinsertkey.TextWrapped = true
+
+CheckKey.Name = "CheckKey"
+CheckKey.Parent = Main
+CheckKey.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+CheckKey.Position = UDim2.new(0.100570679, 0, 0.775172055, 0)
+CheckKey.Size = UDim2.new(0, 336, 0, 33)
+CheckKey.Font = Enum.Font.Oswald
+CheckKey.Text = "Check Last Key"
+CheckKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+CheckKey.TextScaled = true
+CheckKey.TextSize = 14.000
+CheckKey.TextWrapped = true
+CheckKey.MouseButton1Down:Connect(function()
+	if readfile("Hex_Keychecker.txt") == "7$14%10&6.9:49" then
+	    Main.Visible = false
+		loadstring(game:HttpGet(('https://pastebin.com/raw/Ft8MEFZ3')))()
+	end
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 3)
+UICorner_5.Parent = CheckKey
+
+Header.Name = "Header"
+Header.Parent = Main
+Header.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Header.Size = UDim2.new(0, 404, 0, 29)
+Header.Font = Enum.Font.Oswald
+Header.Text = "The-Hexploiter"
+Header.TextColor3 = Color3.fromRGB(255, 255, 255)
+Header.TextScaled = true
+Header.TextSize = 14.000
+Header.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = Header
