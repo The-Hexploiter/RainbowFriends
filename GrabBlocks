@@ -1,0 +1,77 @@
+local BlockTable = CFrame.new(372, 44, 143)
+Block = Workspace.Block1.Block1.CFrame
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block2.Block2.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block3.Block3.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block4.Block4.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block5.Block5.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block6.Block6.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block7.Block7.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block8.Block8.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block9.Block9.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block10.Block10.CFrame
+pl.CFrame = Block
+firetouchinterest(game.workspace.GroupBuildStructures.BlockTower.Trigger, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+wait(0.1)
+Block = Workspace.Block11.Block11.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block12.Block12.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block13.Block13.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block14.Block14.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block15.Block15.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block16.Block16.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block17.Block17.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block18.Block18.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block19.Block19.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block20.Block20.CFrame
+pl.CFrame = Block
+wait(0.1)
+pl.CFrame = (BlockTable)
+wait(0.1)
+Block = Workspace.Block21.Block21.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block22.Block22.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block23.Block23.CFrame
+pl.CFrame = Block
+wait(0.1)
+Block = Workspace.Block24.Block24.CFrame
+pl.CFrame = Block
