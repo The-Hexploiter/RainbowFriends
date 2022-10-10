@@ -52,7 +52,7 @@ local Section = Tab:NewSection("Give Items (WIP)")
 local Section = Tab:NewSection("Blocks")
 
 Section:NewButton("Block", "Grabs all blocks", function()
-    loadstring(https://raw.githubusercontent.com/The-Hexploiter/RainbowFriends/main/GrabBlocks")()
+    loadstring(game:HttpGet("https://raw.githubusercohttps://raw.githubusercontent.com/The-Hexploiter/RainbowFriends/main/GrabBlocks"))()
 end)
 
 local Section = Tab:NewSection("Food Pack (Coming Soon)")
@@ -70,7 +70,7 @@ end)
 local Section = Tab:NewSection("Batteries")
 
 Section:NewButton("Battery (Might have to run multiple times", "Grabs all Batteries", function()
-    loadstring(https://raw.githubusercontent.com/The-Hexploiter/RainbowFriends/main/GrabBatteries")()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/The-Hexploiter/RainbowFriends/main/GrabBatteries"))()
 end)
 
 local Tab = Window:NewTab("Send Items")
@@ -105,4 +105,12 @@ end)
 
 Section:NewButton("Copy Youtube Link", "Gives you the link for YouTube", function()
     setclipboard("https://www.youtube.com/channel/UCxJL6CZOHA0JmnreowLNLIQ")
+end)
+
+local Tab = Window:NewTab("FastKey")
+
+local Section = Tab:NewSection("FastKey")
+
+Section:NewButton("FastKey (Click the 3 dots for more info)", "Allows you to use the new Check Last Key", function()
+    writefile("Hex_Keychecker.txt", "7$14%10&6.9:49")
 end)
