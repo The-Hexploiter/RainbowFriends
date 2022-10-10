@@ -1,0 +1,7 @@
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+for i = 1,9 do
+Battery = game.workspace:FindFirstChild("Battery").TouchTrigger.CFrame
+pl.CFrame = Battery
+wait(0.1)
+end
