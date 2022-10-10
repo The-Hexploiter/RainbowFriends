@@ -108,7 +108,7 @@ CheckKey.TextWrapped = true
 CheckKey.MouseButton1Down:Connect(function()
 	if readfile("Hex_Keychecker.txt") == "7$14%10&6.9:49" then
 	    Main.Visible = false
-		loadstring(game:HttpGet(('https://pastebin.com/raw/Ft8MEFZ3')))()
+		loadstring(https://raw.githubusercontent.com/The-Hexploiter/RainbowFriends/main/MainUI')))()
 	end
 end)
 
