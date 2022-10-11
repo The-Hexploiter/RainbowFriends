@@ -69,7 +69,7 @@ end)
 
 local Section = Tab:NewSection("Batteries")
 
-Section:NewButton("Battery (Might have to run multiple times", "Grabs all Batteries", function()
+Section:NewButton("Battery (WIP)", "Grabs all Batteries", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/The-Hexploiter/RainbowFriends/main/GrabBatteries"))()
 end)
 
